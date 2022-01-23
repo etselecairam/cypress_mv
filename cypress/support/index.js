@@ -25,7 +25,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     }
   })
 
-  Cypress.on('uncaught:exception', (err, runnable) => {
+Cypress.on('uncaught:exception', (err, runnable) => {
     if (err.message.includes('undefined ')) {
       return false
     }
